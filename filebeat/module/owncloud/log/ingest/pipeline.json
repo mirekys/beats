@@ -34,7 +34,7 @@
 	  {
 		  "geoip": {
 		  	"field": "source.ip",
-			"target_field": "source.ip.geo",
+			"target_field": "source.geo",
 			"ignore_missing": true
 		  }
 	  },
