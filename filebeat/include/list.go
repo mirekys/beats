@@ -44,6 +44,7 @@ import (
 	_ "github.com/elastic/beats/filebeat/module/nats"
 	_ "github.com/elastic/beats/filebeat/module/nginx"
 	_ "github.com/elastic/beats/filebeat/module/osquery"
+	_ "github.com/elastic/beats/filebeat/module/owncloud"
 	_ "github.com/elastic/beats/filebeat/module/postgresql"
 	_ "github.com/elastic/beats/filebeat/module/redis"
 	_ "github.com/elastic/beats/filebeat/module/santa"

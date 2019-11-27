@@ -1,0 +1,51 @@
+- name: month
+  description: Please add description
+  example: Please add example
+- name: day
+  description: Please add description
+  example: Please add example
+- name: time
+  description: Please add description
+  example: Please add example
+- name: backend
+  description: Please add description
+  example: Please add example
+  type: keyword
+- name: request_id
+  description: Please add description
+  example: Please add example
+- name: address
+  description: Please add description
+  example: Please add example
+  type: keyword
+- name: name
+  description: Please add description
+  example: Please add example
+  type: text
+- name: app
+  description: Please add description
+  example: Please add example
+  type: text
+- name: request
+  description: Please add description
+  example: Please add example
+  type: group
+  fields:
+  - name: method
+    description: Please add description
+    example: Please add example
+    type: keyword
+- name: original
+  description: Please add description
+  example: Please add example
+- name: message
+  description: Please add description
+  example: Please add example
+  type: text
+- name: ip
+  description: Please add description
+  example: Please add example
+- name: domain
+  description: Please add description
+  example: Please add example
+  type: keyword

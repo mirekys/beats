@@ -1,0 +1,3 @@
+dashboards:
+- id: Filebeat-owncloud-log-Dashboard
+  file: Filebeat-owncloud-log.json

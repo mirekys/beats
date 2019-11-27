@@ -1,0 +1,51 @@
+- key: owncloud
+  title: "owncloud"
+  description: >
+    owncloud Module
+
+  #
+  # The syslog format can be changed to remove or add information.
+  # In addition to the %replacements% below %level% can be used, but it is used
+  # as a dedicated parameter to the syslog logging facility anyway.
+  #
+  # 'log.syslog.format' => '[%reqId%][%remoteAddr%][%user%][%app%][%method%][%url%] %message%',
+  fields:
+    - name: owncloud
+      type: group
+      description: >
+      fields:
+        - name: request_id
+          description: Request identifier
+
+        - name: remote_address
+          type: alias
+          path: source.address
+          description: Remote IP address of the request
+          migration: true
+
+        - name: user
+          type: alias
+          path: user.name
+          description: OwnCloud username of the logged in user
+          migration: true
+
+        - name: app
+          description: Application context
+
+        - name: method
+          type: alias
+          path: http.request.method
+          description: HTTP request method
+          migration: true
+
+        - name: url
+          type: alias
+          path: url.original
+          description: Request path
+          migration: true
+
+        - name: message
+          type: alias
+          path: message
+          description: Log message
+          migration: true
