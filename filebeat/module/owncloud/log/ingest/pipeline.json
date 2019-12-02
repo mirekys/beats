@@ -5,7 +5,7 @@
 		  "grok": {
 			"field": "message",
 			"patterns": [
-				"%{MONTH:month} %{MONTHDAY:day} %{TIME:time} %{IPORHOST:owncloud.backend} ownCloud\\[%{NUMBER}\\]: \\[%{UUID:owncloud.request_id}\\]\\[%{IPORHOST:source.address}\\]\\[%{DATA:user.name}\\]\\[%{DATA:owncloud.app}\\]\\[%{WORD:http.request.method}\\]\\[%{URIPATH:url.original}\\] %{DATA:owncloud.message}$"
+				"%{MONTH:month} *%{MONTHDAY:day} *%{TIME:time} *%{IPORHOST:owncloud.backend} ownCloud\\[%{NUMBER}\\]: \\[%{UUID:owncloud.request_id}\\]\\[%{IPORHOST:source.address}\\]\\[%{DATA:user.name}\\]\\[%{DATA:owncloud.app}\\]\\[%{WORD:http.request.method}\\]\\[%{URIPATH:url.original}\\] %{DATA:owncloud.message}$"
 			],
 			"ignore_missing": true
 		  }
